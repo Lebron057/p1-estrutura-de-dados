@@ -11,27 +11,31 @@
 
 int main() {
     printf("--- Escolha uma das regiões para consultar o custo de frete ---");
-    printf("\n- Sul\n- Sudeste\n- Centro-Oeste\n- Nordeste\n- Norte\n");
+    printf("\n1 - Sul\n2 - Sudeste\n3 - Centro-Oeste\n4 - Nordeste\n5 - Norte\n");
     printf("R: ");
-    char* cidade = ler_texto();
+    int opcao = ler_int();
 
-    if(strcmp(cidade, "sul") == 0) {
-        printf("\nSul: R$ 5,00");
+    switch (opcao) {
+        case 1: // Sul
+        case 2: // Sudeste
+            printf("\nSul/Sudeste: R$ 5,00");
+            break;
 
-    } else if (strcmp(cidade, "sudeste") == 0) {
-        printf("\nSudeste: R$ 5,00");
-    
-    } else if (strcmp(cidade, "centro-oeste") == 0) {
-        printf("\nCentro-Oeste: R$ 7,50");
-    
-    } else if (strcmp(cidade, "nordeste") == 0) {
-        printf("\nNordeste: R$ 12,50");
-    
-    } else if (strcmp(cidade, "norte") == 0) {
-        printf("\nNorte: R$ 15,00");
-    
-    } else {
-        printf("\nRegião inválida!");
+        case 3: // Centro-Oeste
+            printf("\nCentro-Oeste: R$ 7,50");
+            break;
+
+        case 4: // Nordeste
+            printf("\nNordeste: R$ 12,50");
+            break;
+
+        case 5: // Norte
+            printf("\nNorte: R$ 15,00");
+            break;
+
+        default:
+            printf("\nRegiao invalida!");
+            break;
     }
 
     printf("\n");
