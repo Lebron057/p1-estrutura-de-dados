@@ -36,27 +36,27 @@ int main() {
             break;
 
         case 6:
-            printf("Junho: Verão");
+            printf("Junho: Inverno");
             break;
 
         case 7:
-            printf("Julho: Verão");
+            printf("Julho: Inverno");
             break;
 
         case 8:
-            printf("Agosto: Verão");
+            printf("Agosto: Inverno");
             break;
 
         case 9:
-            printf("Setembro: Verão");
+            printf("Setembro: Primavera");
             break;
 
         case 10:
-            printf("Outubro: Verão");
+            printf("Outubro: Primavera");
             break;
 
         case 11:
-            printf("Novembro: Verão");
+            printf("Novembro: Primavera");
             break;
 
         case 12:
